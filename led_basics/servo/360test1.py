@@ -3,10 +3,10 @@ import time
 
 
 GPIO.setmode(GPIO.BCM)
-GPIO.warnings(False)
+GPIO.setwarnings(False)
 GPIO.setup(22, GPIO.OUT)
 
-p = GPIO.PWM(22, 25)
+p = GPIO.PWM(22, 75)
 
 p.start(49)
 
